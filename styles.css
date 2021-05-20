@@ -1,0 +1,126 @@
+/* Variables */
+:root {
+  --heroContainer: #191919;
+  --primaryButton: #d87c49;
+  --fadedcolor: #343434;
+  --containerColor: #f1f1f1;
+  --brushEffect: #333333;
+  --navColor: #1a1a1a;
+}
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@font-face {
+  font-family: light-font;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* base styles */
+body {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+/* mobile styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--navColor);
+  color: white;
+  padding: 1.5em;
+  position: relative;
+  border-bottom: 2px solid white;
+}
+nav a {
+  color: white;
+}
+.navItem {
+  display: flex;
+}
+.navItem .logo {
+  padding-left: 2em;
+}
+.navItem .navigation {
+  display: none;
+  height: 100%;
+  top: 0;
+  /* padding: 10em; */
+  margin-left: -24px;
+
+  background-color: var(--navColor);
+  color: white;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+}
+.navigation li {
+  margin-top: 10vh;
+}
+/* Hero Container */
+.heroContainer {
+  background: url(./assets/headphone.png) center center/cover;
+  /* padding: 10em; */
+  background-color: var(--heroContainer);
+  /* width: 100%; */
+  height: 31rem;
+}
+
+.heroContainerTexts {
+  width: 81%;
+  margin: 0 auto;
+  padding-top: 4em;
+  color: white;
+  font-family: light-font;
+  font-weight: lighter;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+  text-align: justify;
+}
+.heroContainerTexts h1 {
+  font-size: 6vh;
+}
+.primary {
+  padding: 0.7em;
+  background-color: var(--primaryButton);
+  border: none;
+  margin: 1rem auto;
+  color: white;
+  width: 7rem;
+}
+.productDisplay {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: var(--containerColor);
+}
+.productDisplay img {
+  width: 7rem;
+}
+/* ---------------------------------------------------------------------- */
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+}
+/* Desktop Styles */
+@media screen and (min-width: 1200px) {
+}
