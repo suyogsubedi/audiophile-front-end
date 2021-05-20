@@ -6,6 +6,7 @@
   --containerColor: #f1f1f1;
   --brushEffect: #333333;
   --navColor: #1a1a1a;
+  --footeColor: #101010;
 }
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
@@ -107,12 +108,97 @@ nav a {
   text-align: center;
 }
 .product {
-  margin-top: 1rem;
+  margin-top: 7em;
   width: 100%;
+  border-radius: 10px;
   background-color: var(--containerColor);
 }
 .productDisplay img {
   width: 7rem;
+  margin-top: -3rem;
+}
+.product p {
+  margin-top: 5vh;
+  color: #838383;
+}
+.product span {
+  color: #d67d4c;
+  margin-left: 3vw;
+}
+.product:last-child {
+  margin-bottom: 8vh;
+}
+/* Styling for promotion1,2,3 */
+.promotion1 {
+  width: 80%;
+  margin: 5vh auto;
+  border-radius: 10px;
+
+  background-color: var(--primaryButton);
+  text-align: center;
+  color: white;
+}
+.promotion1 img {
+  border: 2px solid black;
+  border-radius: 20vh;
+  padding: 2em;
+  height: 40vh;
+  margin: auto;
+  display: block;
+}
+.productDetails {
+  width: 90%;
+  margin: 0 auto;
+}
+.darkBtn {
+  padding: 0.7em;
+  background-color: black;
+  border: none;
+  margin: 1rem auto;
+  color: white;
+  padding: 1.5em;
+}
+.darkBtn:hover {
+  cursor: pointer;
+}
+/* Styling for promotion ends here */
+
+/* Styling for footer */
+footer {
+  background-color: black;
+  color: white;
+}
+.footerCenter {
+  text-align: center;
+}
+.footerCompanyName {
+  padding-top: 4vh;
+  margin-bottom: 8vh;
+}
+.footerCenter ul li {
+  margin-top: 4vh;
+}
+.footerAbout {
+  color: #626262;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.ftabt {
+  margin-top: 3vh;
+}
+.footerAbout .copyright {
+  margin-top: 3vh;
+}
+.footerSocialMedia {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+.courtesy {
+  display: block;
+  text-align: center;
+  margin-top: 5vh;
 }
 /* ---------------------------------------------------------------------- */
 /* small tablet styles */
