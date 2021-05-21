@@ -29,6 +29,7 @@ li {
 body {
   font-family: "Oswald", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* mobile styles */
 nav {
@@ -160,6 +161,32 @@ nav a {
 }
 .darkBtn:hover {
   cursor: pointer;
+}
+
+.promotion2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--containerColor);
+  padding: 0.5em;
+  overflow-x: hidden;
+  position: relative;
+  height: 60vh;
+}
+.promotion2 img {
+  height: 40vh;
+  margin-left: 2rem;
+  position: absolute;
+}
+.promotion2Info {
+  text-align: center;
+  margin-left: 2vw;
+  margin-top: 25%;
+  z-index: 1;
+}
+.btnTransparent {
+  width: 51vw;
+  padding: 1em;
 }
 /* Styling for promotion ends here */
 
