@@ -52,14 +52,13 @@ nav a {
 }
 .navItem .navigation {
   display: none;
-  height: 100%;
+  height: 100vh;
   top: 0;
-  /* padding: 10em; */
   margin-left: -24px;
-
   background-color: var(--navColor);
   color: white;
   position: fixed;
+  top: 0;
   width: 100vw;
   text-align: center;
 }
@@ -110,6 +109,7 @@ nav a {
 }
 .product {
   margin-top: 7em;
+  height: 50vh;
   width: 100%;
   border-radius: 10px;
   background-color: var(--containerColor);
@@ -126,9 +126,7 @@ nav a {
   color: #d67d4c;
   margin-left: 3vw;
 }
-.product:last-child {
-  margin-bottom: 8vh;
-}
+
 /* Styling for promotion1,2,3 */
 .promotion1 {
   width: 80%;
@@ -230,6 +228,38 @@ footer {
 /* ---------------------------------------------------------------------- */
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  .productDisplay {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    margin-left: 5%;
+    padding: 0;
+    height: 20vh;
+  }
+  .product img {
+    position: absolute;
+    left: 24%;
+    height: 78%;
+    object-fit: contain;
+  }
+  .product p {
+    margin-top: 12vh;
+    color: #838383;
+  }
+  .product span {
+    color: #d67d4c;
+    margin-left: 3vw;
+  }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
