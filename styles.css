@@ -46,6 +46,8 @@ nav a {
 }
 .navItem {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .navItem .logo {
   padding-left: 2em;
@@ -61,6 +63,9 @@ nav a {
   top: 0;
   width: 100vw;
   text-align: center;
+}
+.navigationWideScreen {
+  display: none;
 }
 .navigation li {
   margin-top: 10vh;
@@ -248,7 +253,7 @@ footer {
   }
   .product img {
     position: absolute;
-    left: 24%;
+    align-self: center;
     height: 78%;
     object-fit: contain;
   }
@@ -260,10 +265,65 @@ footer {
     color: #d67d4c;
     margin-left: 3vw;
   }
+  .footerCenter {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footerCompanyName {
+    margin-bottom: 2vh;
+  }
+  .footerCenter ul {
+    display: flex;
+  }
+  .footerCenter ul li {
+    margin-left: 1rem;
+  }
+  .footerAbout {
+    color: #626262;
+    width: 47%;
+    margin-left: 2rem;
+    text-align: left;
+  }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
+  .navItem #hamBurger {
+    display: none;
+  }
+  .navItem {
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  .navItem .logo:hover {
+    cursor: pointer;
+  }
+
+  .navigationWideScreen {
+    display: block;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .navigationWideScreen li:hover {
+    cursor: pointer;
+  }
+  .navigationWideScreen a {
+    margin-left: 2rem;
+  }
+  .heroContainerTexts {
+    /* max-width: 700px; */
+    max-width: 50%;
+  }
+  .heroContainerTexts h1 {
+    font-size: 5vh;
+  }
 }
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
+  .heroContainer {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
 }
